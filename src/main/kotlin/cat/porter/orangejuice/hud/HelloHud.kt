@@ -9,8 +9,4 @@ class HelloHud : TextHud("", "") {
        sb.append("Hello World!")
         return null
     }
-
-    override fun updateFrequency(): Long {
-        return 1000000000L;
-    }
 }

@@ -1,6 +1,7 @@
 package cat.porter.orangejuice.config
 
 import cat.porter.orangejuice.OrangeJuice
+import cat.porter.orangejuice.hud.ExampleHud
 import org.polyfrost.oneconfig.api.config.v1.Config
 import org.polyfrost.oneconfig.api.config.v1.annotations.Keybind
 import org.polyfrost.oneconfig.api.config.v1.annotations.Switch
@@ -34,5 +35,8 @@ object OrangeJuiceConfig : Config("${OrangeJuice.ID}.json", OrangeJuice.NAME, Ca
 
     init {
         registerKeybind(toggleSprintBind);
+        addCallback("sprintHudText") {
+            ExampleHud.reload()
+        };
     }
 }

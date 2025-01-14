@@ -30,14 +30,13 @@ object OrangeJuice {
 
     init {
         OrangeJuiceConfig
-        PolyUI
     }
 
     // Register the config and commands.
     @Mod.EventHandler
     fun onInit(event: FMLInitializationEvent) {
 //        OrangeJuiceConfig.preload()
-        HudManager.register(ExampleHud());
+        HudManager.register(ExampleHud);
         HudManager.register(HelloHud());
         CommandManager.registerCommand(GuiCommand())
     }
