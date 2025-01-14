@@ -1,0 +1,14 @@
+{
+  "compatibilityLevel": "${java_version}",
+  "minVersion": "0.8",
+  "package": "cat.porter.orangejuice.mixin",
+  "refmap": "mixins.${mod_id}.refmap.json",
+  "injectors": {
+    "maxShiftBy": 5
+  },
+  "client": [
+    "MinecraftMixin",
+    "MixinEntityPlayerSP"
+  ],
+  "verbose": true
+}
